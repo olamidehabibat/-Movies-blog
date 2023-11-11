@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    background-color: #f9f9f9;
+}
+
+#container > h1{
+text-align: center;
+padding: 2rem 0;
+font-size: 4rem;
+text-transform: capitalize;
+}
+
+#container > p{
+    max-width: 900px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    opacity: .6;
+}
+
+.genwrapper{
+    width: 100%;
+    max-width: 1300px;
+    margin: 2rem auto;
+}
+
+.blogwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.badge_side{
+border: 1px solid rgb(215, 214, 214);
+border-radius: 10px;
+background-color: #ffff;
+}
+
+.badge_side img{
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0.2rem 0.5rem rgb(234, 233, 233);
+}
+
+.badge_content{
+    padding: 2rem;
+}
+
+.badge_content h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.badge_content h4 > span{
+    opacity: 0.3;
+}
+
+.badge_content h2{
+    font-family: 1.8rm;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.badge_content > p{
+    opacity: 0.6;
+}
+
+.read_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.read_part > h1{
+    color: #2157b5;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+}
+
+.read_part > span{
+    opacity: 0.6;
+}
+
+.post_card{
+    border: 1px solid rgb(215, 214, 214);
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    height: 17vh;
+}
+
+.post_card:last-child{
+    margin-bottom: 0;
+}
+
+.post_card img{
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 40%;
+    height: 100%;
+}
+.imgpost{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgpost h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.imgpost h4 > span{
+    opacity: 0.4;
+}
+
+.imgpost p{
+    padding-top: 0.6rem;
+    font-weight: 700;
+    font-size: 1.16rem;
+}
+
+.imgpost > h6{
+    display: flex;
+    justify-content: end;
+    font-size: 1.1rem;
+    opacity: 0.5;
+}
+
+.cardwrapper > h1{
+text-transform: capitalize;
+font-size: 2rem;
+}
+
+.cardisplay{
+    display: flex;
+    margin-top: 2rem;
+    gap: 15px;
+}
+
+.card{
+    border: 1px solid rgb(215, 214, 214)215, 214, 214;
+    border-radius: 10px;
+}
+
+.card>img{
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.cardcontent{
+    padding: 1rem, 2rem;
+}
+
+.cardcontent>span{
+    opacity: .4;
+    font-weight: 600;
+}
+.cardcontent h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    padding: 1rem 0;
+}
+
+.cardcontent p{
+    opacity: .5;
+    font-weight: 600;
+}
+
+
+.footer{
+    height: 30px;
+    background-color: #cdeae5;
+}
+
+@media (min-width: 320px) and (max-width: 500px){
+    #container>h1{
+        font-size: 3rem;
+    }
+
+    #container>p{
+     width: 330px;  
+     font-size: 1.1rem;
+     line-height: 1.4rem; 
+    }
+
+    .blogwrapper{
+        grid-template-columns: 1fr;
+    }
+
+    /* .badge_side{
+        grid-row: 2;
+    } */
+
+    .badge_side{
+    width: 330px;
+    margin: auto;
+    }
+
+    .badge_content{
+        padding: 1rem;
+    }
+
+    .badge_content>h4{
+    font-size: 1rem;
+    }
+
+    .badge_content>h2{
+        font-size: 1rem;
+    }
+
+    .badge_content>p{
+    font-size: .8rem;
+    line-height: 18px;
+    }
+
+    .read_part>h1{
+        font-size: 1.2rem;
+    }
+
+    .read_part>span{
+        font-size: .9rem;
+    }
+
+    .post_card{
+        width: 330px;
+        margin: 1rem auto;
+        height: 15vh;
+    }
+
+    .imgpost>h4{
+        font-size: .75rem;
+    }
+
+    .imgpost>p{
+        font-size: .8rem;
+        line-height: 18px;
+    }
+
+    .imgpost>h6{
+        font-size: .8rem;
+    }
+
+    .cardwrapper{
+        width: 330px;
+    }
+
+    .cardwrapper>h1{
+        font-size: 1.5rem;
+    }
+
+    .cardisplay{
+        flex-direction: column;
+    }
+
+    .cardcontent{
+        padding-inline: 1rem;
+    }
+
+    .cardcontent>h2{
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    .cardcontent > p{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+}
